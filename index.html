@@ -13,40 +13,49 @@
         <div class="container">
             <button onclick="addRowCell()">Add Cell</button>
             <button onclick="removeRowCell()">Remove Cell</button>
-            <button>Remove</button>
+            <button onclick="addRow()">Add Row</button>
+            <button onclick="removeRow()">Remove Row</button>
             <button>Color</button>
         </div>
     </section>
 
     <section>
-        <div class="container">
+        <div id="grid">
             <table id="table">
                 <tr id="row">
-                    <td>cell</td>
+                    <td id="col">cell</td>
                 </tr>
             </table>
         </div>
     </section>
 
 </body>
-<script  >
+<script src="/js/cellFunctions.js">
 
-    function addRowCell() {
-        var cell = document.getElementById("row");
-        var x = cell.insertCell(-1);
-        x.innerHTML = "cell";
-    }
+    // function addRowCell() {
+    //     var col = document.getElementById("col");
+    //     var x = col.insertColumn(-1);
+    //     x.innerHTML = "cell";
+    // }
 
-    function removeRowCell() {
-        var cell = document.getElementById("row");
-        cell.deleteCell(0);
-    }
+    // function removeRowCell() {
+    //     var cell = document.getElementById("row");
+    //     cell.deleteCell(0);
+    // }
 
-    function addRow() {
-        var cell = document.getElementById("row");
-        var x = cell.insertCell(-1);
-        x.innerHTML = "cell";
-    }
+    // function addRow() {
+    //     var table = document.getElementById("table");
+    //     var row = document.getElementById("row");
+    //     var clone = row.cloneNode(true);
+    //     clone.id = "newID";
+    //     table.appendChild(clone);
+    // }
+
+    // function addRow() {
+    //     var table = document.getElementById("table");
+    //     var x = table.insertRow(-1);
+    //     x.innerHTML = "cell";
+    // }
 
 
 // let addRowCellButton = document.getElementById("table");
